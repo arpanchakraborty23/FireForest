@@ -14,8 +14,8 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 __version__='0.0.1'
-Repo_name= ''
-package_name=''
+Repo_name= 'FireForest'
+package_name='FireForest'
 Author='Arpanchakraborty23'
 Author_email='arpanchakraborty500@gmail.com'
 

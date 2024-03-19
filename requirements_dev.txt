@@ -1,0 +1,16 @@
+pandas
+pymongo
+numpy
+mlflow
+dvc
+pytest
+scikit-learn
+matplotlib
+seaborn
+ipykernel
+flask
+
+# dev
+black
+flack
+-e .

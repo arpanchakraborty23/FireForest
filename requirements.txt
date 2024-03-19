@@ -1,0 +1,12 @@
+pandas
+pymongo
+numpy
+mlflow
+dvc
+pytest
+scikit-learn
+matplotlib
+seaborn
+ipykernel
+flask
+-e .
