@@ -9,4 +9,5 @@ matplotlib
 seaborn
 ipykernel
 flask
+python-dotenv
 -e .

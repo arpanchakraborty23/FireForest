@@ -1,13 +1,21 @@
 import pandas as pd 
 from pymongo import MongoClient
 import json
+from dotenv import load_dotenv
+import os 
 
-url='mongodb+srv://www588650:arpan@cluster1.kdt4bq1.mongodb.net/'
+load_dotenv()
+uri=os.getenv('url')
+db=os.getenv('database')
+collection=os.getenv('clean_data')
+
+
+url=uri
 client=MongoClient(url)
-db=client['CSV']
-collection=db['Algarian_Fire_Forest']
+db=client[db]
+collection=db[collection]
 
-df=pd.read_csv('experiment/data/Algerian_forest_fires_dataset.csv')
+df=pd.read_csv('experiment/data/Fire_Forest_Clean.csv')
 data=df.to_dict(orient='records')
 collection.insert_many(data)
 print(df.head())

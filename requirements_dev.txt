@@ -9,6 +9,7 @@ matplotlib
 seaborn
 ipykernel
 flask
+python-dotenv
 
 # dev
 black
